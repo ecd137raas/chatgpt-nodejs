@@ -11,7 +11,7 @@ const openai = new OpenAIApi(configuration);
 async function runCompletion() {
     const completion = await openai.createCompletion({
         model: 'text-davinci-003',
-        prompt: 'How are you today?',
+        prompt: 'Olá, como você está?',
     });
     console.log(completion.data.choices[0].text);
 }
